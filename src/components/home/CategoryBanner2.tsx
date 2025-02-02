@@ -1,7 +1,7 @@
 import React from 'react';
 
-import bannerOne from '../../../public/assets/img/category_banner/category-banner5.jpg';
-import bannerTwo from '../../../public/assets/img/category_banner/category-banner6.jpg';
+import bannerOne from '../../../public/assets/img/category_banner/abstract.jpg';
+// import bannerTwo from '../../../public/assets/img/category_banner/category-banner6.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -15,24 +15,24 @@ const CategoryBanner2 = () => {
               <div className="category-banner-single category-banner2 mb-30 pos-rel">
                 <div className="category-banner-img">
                   <Image
-                    style={{ width: '100%', height: 'auto' }}
+                    style={{
+                      width: '100%',
+                      height: 'auto',
+                      filter: 'opacity(60%)',
+                    }}
                     src={bannerOne}
                     alt="banner-img"
                   />
                 </div>
                 <div className="category-banner-inner">
                   <div className="category-banner-content">
-                    <Link
-                      href="/shop-sidebar-5-column"
-                      className="product-category"
-                    >
-                      <span>Exclusive Jacket</span>
-                      Collection
+                    <Link href="/contact" className="product-category">
+                      <span>Top Notch </span>Consulting
                     </Link>
                     <p className="category-short-desc">
-                      Start from : <span>£258.00</span>
+                      Starts from : <span> &#8358;25,000</span>
                     </p>
-                    <Link href="/shop-sidebar-5-column" className="border-btn">
+                    <Link href="/contact" className="border-btn">
                       Shop Now
                     </Link>
                   </div>
@@ -43,8 +43,12 @@ const CategoryBanner2 = () => {
               <div className="category-banner-single category-banner2 mb-30 pos-rel">
                 <div className="category-banner-img">
                   <Image
-                    style={{ width: '100%', height: 'auto' }}
-                    src={bannerTwo}
+                    style={{
+                      width: '100%',
+                      height: 'auto',
+                      filter: 'opacity(60%)',
+                    }}
+                    src={bannerOne}
                     alt="banner-img"
                   />
                 </div>
@@ -55,10 +59,10 @@ const CategoryBanner2 = () => {
                       className="product-category"
                     >
                       <span>Hot Exclusive</span>
-                      Offer on Jewelry
+                      Offer on Computers
                     </Link>
                     <p className="category-short-desc">
-                      <span>50%</span> Instant Discount
+                      <span>15%</span> Instant Discount after consulting
                     </p>
                     <Link href="/shop-sidebar-5-column" className="border-btn">
                       Shop Now

@@ -29,10 +29,9 @@ const menu_data: MenuType[] = [
       //   //   { title: 'Group Product', link: '/group-product' },
       //   // ],
       // },
-      { title: 'Category 01', link: '/' },
-      { title: 'Category 02', link: '/' },
-      { title: 'Category 03', link: '/' },
-      { title: 'Category 04', link: '/' },
+      { title: 'Computers', link: '/contact' },
+      { title: 'Consulting', link: '/contact' },
+      { title: 'Accessories', link: '/contact' },
     ],
   },
   {

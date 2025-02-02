@@ -6,9 +6,8 @@ import 'swiper/css/bundle';
 import banner4 from '../../../public/assets/img/slider-img/banner-01.png';
 import banner5 from '../../../public/assets/img/slider-img/banner-02.png';
 import banner6 from '../../../public/assets/img/slider-img/banner-03.png';
-import bannerBg from '../../../public/assets/img/slider-img/banner-bg-1.png';
+import bannerBg from '../../../public/assets/img/banner/computer-store.jpg';
 import Link from 'next/link';
-import Image from 'next/image';
 const HeroBanner2 = () => {
   const [activeIndex, setActiveIndex] = useState(0); // State to track active slide index
 
@@ -19,21 +18,21 @@ const HeroBanner2 = () => {
   const sliderData = [
     {
       id: 1,
-      bgImg: banner4,
-      tagOne: 'Fast Delivery',
-      tagTwo: 'Hot Food Delivered To You',
+      bgImg: banner5,
+      tagOne: 'Top Brands',
+      tagTwo: 'Discover the Best in Computer Hardware',
     },
     {
       id: 2,
-      bgImg: banner5,
-      tagOne: 'On Trending',
-      tagTwo: 'Food For All Seasons',
+      bgImg: banner4,
+      tagOne: 'Expert Tech Support',
+      tagTwo: 'Your Partner in Computer Solutions',
     },
     {
       id: 3,
       bgImg: banner6,
-      tagOne: 'Featured Service',
-      tagTwo: 'Perfect Food Delivery. Unique Experience',
+      tagOne: 'Custom Solutions',
+      tagTwo: 'Tech Consulting Services for Your Business',
     },
   ];
   return (
@@ -44,6 +43,7 @@ const HeroBanner2 = () => {
           style={{
             backgroundImage: `url(${bannerBg.src})`,
             backgroundSize: 'cover',
+            filter: 'brightness(0.7)',
           }}
         ></div>
 
@@ -84,13 +84,13 @@ const HeroBanner2 = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="col-xxl-5 col-xl-5 col-lg-5">
+                      {/* <div className="col-xxl-5 col-xl-5 col-lg-5">
                         <div className="banner-thumb-wrapper pos-rel">
                           <div className="banner-thumb-2">
                             <Image src={item?.bgImg} alt="banner-4" />
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 )}

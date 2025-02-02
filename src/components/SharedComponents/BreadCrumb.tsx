@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import bgImg from '../../../public/assets/img/bg/page-title-bg.jpg';
+import bgImg from '../../../public/assets/img/banner/computer-store.jpg';
 
 interface propsType {
   title: string;
