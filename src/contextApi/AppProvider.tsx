@@ -32,11 +32,11 @@ const AppProvider = ({ children }: { children: React.ReactNode }) => {
       type: 1,
       hasBannerAd: false, // TODO
     },
-    hero: 1,
+    hero: 2,
     main: {
       //   order:'',
-      categoryBanner: 1,
-      categoryArea: 1,
+      categoryBanner: 2,
+      // categoryArea: 1,
 
       hasTestimonials: false,
       hasNewsletter: false,

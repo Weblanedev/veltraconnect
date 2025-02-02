@@ -1,4 +1,4 @@
-import contact_data from '@/data/contact-data';
+import brand_data from '@/data/brand-data';
 import React from 'react';
 
 const ContactMap = () => {
@@ -9,7 +9,7 @@ const ContactMap = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="contact-map-wrapper">
-                <iframe src={contact_data.googleMapUrl}></iframe>
+                <iframe src={brand_data.map}></iframe>
               </div>
             </div>
           </div>

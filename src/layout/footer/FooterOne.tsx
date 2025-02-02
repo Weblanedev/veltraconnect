@@ -1,10 +1,9 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
-import logoImg from '../../../public/assets/img/logo/logo-alt.svg';
 import menu_data from '@/data/menu-data';
 import socials_data from '@/data/social-data';
-import contact_data from '@/data/contact-data';
+import brand_data from '@/data/brand-data';
+import LogoText from '@/components/common/logo-text/LogoText';
 
 const FooterOne = () => {
   return (
@@ -13,9 +12,7 @@ const FooterOne = () => {
         <section className="footer-area footer-area1 footer-area1-bg pt-95 pb-55">
           <div className="container">
             <div className="header-logo header1-logo mb-40 mb-md-0">
-              <Link href="/" className="logo-bl">
-                <Image src={logoImg} alt="logo-img" />
-              </Link>
+              <LogoText color="#fff" />
             </div>
             <div className="row justify-content-end">
               {menu_data
@@ -43,15 +40,17 @@ const FooterOne = () => {
                   </div>
                   <p className="mb-20">
                     Phone:{' '}
-                    <Link href="tel:555-900-888">{contact_data.phone[0]}</Link>
+                    <Link href={`tel:${brand_data.phone}`}>
+                      {brand_data.phone}
+                    </Link>
                   </p>
                   <p>
                     Email:{' '}
-                    <Link href="mailto:info@example.com">
-                      {contact_data.email[0]}
+                    <Link href={`mailto:${brand_data.email}`}>
+                      {brand_data.email}
                     </Link>
                   </p>
-                  <p>Address: {contact_data.address[0]}</p>
+                  <p>Address: {brand_data.address}</p>
                 </div>
               </div>
             </div>
@@ -62,10 +61,8 @@ const FooterOne = () => {
             <div className="copyright1-inner">
               <div className="copyright-text copyright1-text">
                 Copyright {new Date().getFullYear()} by{' '}
-                <Link href="https://themeforest.net/user/bdevs/portfolio">
-                  {contact_data.name}
-                </Link>
-                . All Rights Reserved
+                <Link href="/">{brand_data.full_name}</Link>. All Rights
+                Reserved
               </div>
               <div className="copyright-link">
                 <Link href="/" className="text-btn">

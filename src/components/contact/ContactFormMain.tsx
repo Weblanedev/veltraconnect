@@ -1,4 +1,4 @@
-import contact_data from '@/data/contact-data';
+import brand_data from '@/data/brand-data';
 import ContactForm from '@/form/ContactForm';
 import LocationIcon from '@/svg/LocationIcon';
 import PhoneIcon from '@/svg/PhoneIcon';
@@ -38,7 +38,7 @@ const ContactFormMain = () => {
                             <span>
                               Mobile :{' '}
                               <Link href="tel:(+88)872-670-780">
-                                <span>{contact_data.phone[0]}</span>
+                                <span>{brand_data.phone}</span>
                               </Link>
                             </span>
                             {/* <span>
@@ -58,8 +58,8 @@ const ContactFormMain = () => {
                           <div className="irc-item-content">
                             <div className="irc-item-heading">Email</div>
                             <span>
-                              <Link href={contact_data.email[0]}>
-                                {contact_data.email[0]}
+                              <Link href={brand_data.email}>
+                                {brand_data.email}
                               </Link>
                             </span>
                             {/* <span>
@@ -77,7 +77,7 @@ const ContactFormMain = () => {
                           </div>
                           <div className="irc-item-content">
                             <div className="irc-item-heading">Location</div>
-                            <span>{contact_data.address[0]}</span>
+                            <span>{brand_data.address}</span>
                           </div>
                         </div>
                       </div>

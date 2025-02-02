@@ -1,9 +1,7 @@
-import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
-import logoImg from '../../../public/assets/img/logo/logo.svg';
-import Image from 'next/image';
 import Menu from './components/Menu';
 import useGlobalContext from '@/hooks/use-context';
+import LogoText from '@/components/common/logo-text/LogoText';
 
 const HeaderOne = () => {
   const searchRef = useRef(null);
@@ -41,9 +39,7 @@ const HeaderOne = () => {
                 <div className="header-main-content-wrapper">
                   <div className="header-main-left header-main-left-header1">
                     <div className="header-logo header1-logo">
-                      <Link href="/" className="logo-bl">
-                        <Image src={logoImg} alt="logo-img" />
-                      </Link>
+                      <LogoText />
                     </div>
                   </div>
                   <div className="header-main-right header-main-right-header1">
